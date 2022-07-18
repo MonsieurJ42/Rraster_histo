@@ -14,9 +14,10 @@ r_eff<-table(r_v)
 rm(r_v)
 ## Nettoyage de la mémoire
 gc()
-## Mise en forme des noms
-names(r_eff)<-label
-## Création d'une seconde table contenant les résultats en proportionnels
-prop_eff<-prop.table(r_eff)
-##Export Excel
-write_xlsx(r_eff, output)
+##Export
+out_data <-data.frame(label,
+                      r_eff,
+                      prop.table(r_eff))
+out_data<-subset(out_data,select=-c(r_v,r_v.1))
+names(out_data)<-c(column_name,"Effectif","Proportion Effectif")
+write.csv(out_data,output)
