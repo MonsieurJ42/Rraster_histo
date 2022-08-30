@@ -14,15 +14,13 @@ label<-c("Nival",
         "Subalpin Superieur",
         "Subalpin Inférieur",
         "Montagnard Superieur",
-        "Montagnard Inferieur",
+        "Montagnard Inférieur",
         "Collineen",
+        "Monti-Méditerranéen",
         "Planitiaire",
-        "Montimediterraneen",
-        "Montimediterraneen",
-        "Submediterraneen",
-        "Submediterraneen",
-        "Supramediterraneen",
-        "Mediotmediterraneen/Permediterraneen")
+        "Sub-Mediterraneen",
+        "Supra-Mediterraneen",
+        "Medio-Mediterraneen/Thermo-Méditerranéen")
 ## Nom de l'étiquette
 column_name<-"Etage de végetation calcule"
 ## Chemin ou écrire le fichier excel de sortie

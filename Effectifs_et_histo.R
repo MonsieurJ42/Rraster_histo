@@ -23,10 +23,6 @@ raster2cleandf <-function(input,label,column_name){
 ## Chargement des données depuis le fichier de configuration
 source(file = "config.R")
 ## Test a faire
-### Voir si on sort le data frame out_data
-raster2cleandf(input,label,column_name)
-
-### Voir si il s'écrit dans une variable
 test_out_data <- raster2cleandf(input,label,column_name)
 
 #write.csv(out_data,output)
